@@ -1075,7 +1075,7 @@ function touchNavigation() {
             if (hasClass(body, 'gdesc-open') || doingPinch || pinchBigger) {
                 return;
             }
-            e.preventDefault();
+            //e.preventDefault(); -- error in mobile
             endCoords = e.targetTouches[0];
             let slideHeight = activeSlide.querySelector('.gslide-inner-content').offsetHeight;
             let slideWidth = activeSlide.querySelector('.gslide-inner-content').offsetWidth;
