@@ -1113,7 +1113,7 @@
                 if (hasClass(body, 'gdesc-open') || doingPinch || pinchBigger) {
                     return;
                 }
-                e.preventDefault();
+                // e.preventDefault(); -- error in mobile
                 endCoords = e.targetTouches[0];
                 var slideHeight = activeSlide.querySelector('.gslide-inner-content').offsetHeight;
                 var slideWidth = activeSlide.querySelector('.gslide-inner-content').offsetWidth;
